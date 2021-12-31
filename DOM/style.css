@@ -16,13 +16,12 @@ body {
 .todo-list {
     background-color: #c966dc;
     border-radius: 50px 2px 25px 2px;
-    box-shadow: 10px 10px 15px #2f104e;
+    box-shadow: 10px 10px 15px #2f104e, -10px -10px #923fbb, -20px -20px #772daa;
     padding: 1.5rem;
     min-width: 400px;
     min-height: 300px;    
     transition-duration: 500ms;
 }
-
 .todo-list:hover {
     transform: scale(1.2);
     transition-duration: 250ms;
@@ -76,12 +75,18 @@ body {
 }
 
 .task {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, .1);
     color: #2f104e;
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem;
-    padding: 1rem 3rem;
+    transition-duration: 500ms;
+}
+
+.task:hover {
+    background: #310e58;
+    color: antiquewhite;
+    transition-duration: 250ms;
 }
 
 .check-button, .delete-button {
