@@ -10,6 +10,8 @@ const createTask = (event) => {
     const content = `<p class="content">${value}<p>`;
 
     task.innerHTML = content;
+
+    task.appendChild(CompleteButton());
     list.appendChild(task);
     input.value = " ";
 }
@@ -17,3 +19,22 @@ const createTask = (event) => {
 const newTask = document.querySelector('[data-form-button]');
 
 newTask.addEventListener('click', (createTask));
+
+const CompleteButton = () => {
+    const completeButton = document.createElement('button');
+    
+    completeButton.classList.add('check-button');
+    completeButton.innerText = 'Done';
+
+    completeButton.addEventListener('click', completeTask);
+    
+    return completeButton;
+}
+
+const completeTask = (event) => {
+    const completeButton = event.target;
+
+    const doneTask = completeButton.parentElement;
+
+    doneTask.classList.toggle('done');
+}

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    max-width: fit-content;
     background-image: linear-gradient(to left top, #2f104e, #310e58, #320b61, #32076c,
     #320476, #3f0b82, #4d138e, #5a1a9a, #772daa, #923fbb, #ae52cb, #c966dc);
     font-family: "Space Mono", monospace;
@@ -90,5 +91,13 @@ body {
 }
 
 .check-button, .delete-button {
-    background-color: #2f104e;
+    color: whitesmoke;
+    margin-left: 1.25em;
+    background-color: #adcb75  ;
+    border-radius: 5px;
 }
+
+.task.done .content {
+    text-decoration: line-through;
+  }
+
