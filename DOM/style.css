@@ -85,19 +85,25 @@ body {
 }
 
 .task:hover {
-    background: #310e58;
-    color: antiquewhite;
+    background: whitesmoke;
     transition-duration: 250ms;
 }
 
 .check-button, .delete-button {
     color: whitesmoke;
     margin-left: 1.25em;
-    background-color: #adcb75  ;
+    background-color: #310e58  ;
     border-radius: 5px;
+    transition-duration: 500ms;
 }
 
+.check-button:hover {
+    color: #c966dc;
+    background: #3f0b82;
+    transition-duration: 200ms;
+}
 .task.done .content {
     text-decoration: line-through;
+    
   }
 

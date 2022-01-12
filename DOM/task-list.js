@@ -1,4 +1,6 @@
-const createTask = (event) => {
+( () => {
+    
+    const createTask = (event) => {
     event.preventDefault();
 
     const list = document.querySelector('[data-list]');
@@ -38,3 +40,4 @@ const completeTask = (event) => {
 
     doneTask.classList.toggle('done');
 }
+})(); 
